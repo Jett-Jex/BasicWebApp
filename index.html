@@ -88,22 +88,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	function insertImages()
 	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		smile = parseFloat(document.getElementById("firstInputBox").value);
+		sad = parseFloat(document.getElementById("secondInputBox").value);
 
-		for(let index = 0; index < exampleVariable1; index++)
+		for(let index = 0; index < smile; index++)
 		{
 			var smileyImage = document.createElement("img");
 			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
 			document.getElementById("contentBox").appendChild(smileyImage);
 		}
-		for(let index2 = 0; index2 < exampleVariable2; index2++)
+		for(let index2 = 0; index2 < sad; index2++)
 		{
 			var frownyImage = document.createElement("img");
 			frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
 			document.getElementById("contentBox").appendChild(frownyImage);
 		}
-		document.getElementById("alternateContentText").innerHTML = "You inserted " + exampleVariable1 + " smiley faces and " + exampleVariable2 + " frowny faces!";
+		document.getElementById("alternateContentText").innerHTML = "You inserted " + smile + " smiley faces and " + sad + " frowny faces!";
 	}
 			
 </script>
