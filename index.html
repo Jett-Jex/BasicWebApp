@@ -88,22 +88,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	function insertImages()
 	{
-		smile = parseFloat(document.getElementById("firstInputBox").value);
-		frown = parseFloat(document.getElementById("secondInputBox").value);
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 
-		for(let index = 0; index < smile; index++)
+		for(let index = 0; index < exampleVariable1; index++)
 		{
 			var smileyImage = document.createElement("img");
 			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
-			document.getElementById("secret division").appendChild(smileyImage);
+			document.getElementById("contentBox").appendChild(smileyImage);
 		}
-		for(let index2 = 0; index2 < frown; index2++)
+		for(let index2 = 0; index2 < exampleVariable2; index2++)
 		{
 			var frownyImage = document.createElement("img");
 			frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
-			document.getElementById("secret division").appendChild(frownyImage);
+			document.getElementById("contentBox").appendChild(frownyImage);
 		}
-		document.getElementById("secret paragraph").innerHTML = "You inserted " + smile + " smiley faces and " + frown + " frowny faces!";
+		document.getElementById("alternateContentText").innerHTML = "You inserted " + exampleVariable1 + " smiley faces and " + exampleVariable2 + " frowny faces!";
 	}
 			
 </script>
@@ -196,12 +196,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <center>
 	
-	<div id="secret division" class="w3-container">
+	<div id="contentBox" class="w3-container">
 		<p>the Neuralink user after they opened the 500 Yottabyte zip bomb i sent them</p>
-		<img id="smileyImage" src="https://i.imgur.com/jctdkSS.png" alt="smileyImage">
-		<p id="secret paragraph">emojis</p>	
+		<p id="alternateContentText"> emojis </p>
+		
 	</div>
-	
 	<a href="#content" onclick="resetVariables();" class="w3-btn w3-grey">you're not supposed to be here, go back now.</a>
 	
 </center>
