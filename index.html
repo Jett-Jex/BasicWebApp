@@ -91,19 +91,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		X = parseFloat(document.getElementById("firstInputBox").value);
 		Y = parseFloat(document.getElementById("secondInputBox").value);
 
-		for(let index = 0; index < [X]; index++)
+		for(let index = 0; index < smile; index++)
 		{
 			var smileyImage = document.createElement("img");
 			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
-			document.getElementById("contentBox").appendChild(smileyImage);
+			document.getElementById("secret division").appendChild(smileyImage);
 		}
-		for(let index2 = 0; index2 < [Y]; index2++)
+		for(let index2 = 0; index2 < frown; index2++)
 		{
 			var frownyImage = document.createElement("img");
 			frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
-			document.getElementById("contentBox").appendChild(frownyImage);
+			document.getElementById("secret division").appendChild(frownyImage);
 		}
-		document.getElementById("secret").innerHTML = "You inserted " + [X] + " smiley faces and " + [Y] + " frowny faces!";
+		document.getElementById("secret paragraph").innerHTML = "You inserted " + smile + " smiley faces and " + sad + " frowny faces!";
 	}
 			
 </script>
@@ -196,9 +196,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <center>
 	
-	<div id="contentBox" class="w3-container">
+	<div id="secret division" class="w3-container">
 		<p>the Neuralink user after they opened the 500 Yottabyte zip bomb i sent them</p>
-		<p id="secret">emojis</p>	
+		<p id="secret paragraph">emojis</p>	
 	</div>
 	
 	<a href="#content" onclick="resetVariables();" class="w3-btn w3-grey">you're not supposed to be here, go back now.</a>
